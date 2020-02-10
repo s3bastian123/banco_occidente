@@ -1,0 +1,257 @@
+/* line 1, src/scss/common/_fonts.scss */
+body {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1;
+  font-family: "arial";
+  color: #000000;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* line 8, src/scss/common/_fonts.scss */
+h1, h3, h4, h5, h6, p {
+  margin-bottom: 10px;
+}
+
+/* line 15, src/scss/common/_fonts.scss */
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, li::selection, a::selection, span::selection, strong::selection, i::selection {
+  color: black;
+  background: blue;
+}
+
+/* line 20, src/scss/common/_fonts.scss */
+h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h4::-moz-selection, h5::-moz-selection, h6::-moz-selection, p::-moz-selection, li::-moz-selection, a::-moz-selection, span::-moz-selection, strong::-moz-selection, i::-moz-selection {
+  color: black;
+  background: blue;
+}
+
+/* line 25, src/scss/common/_fonts.scss */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 30, src/scss/common/_fonts.scss */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* line 35, src/scss/common/_fonts.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 39, src/scss/common/_fonts.scss */
+u {
+  text-decoration: underline;
+}
+
+/* line 43, src/scss/common/_fonts.scss */
+i {
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.eot");
+  src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 1, src/scss/components/_form.scss */
+.buttons {
+  text-align: center;
+}
+
+/* line 3, src/scss/components/_form.scss */
+.buttons li {
+  width: 90px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: 1px solid #C9C9C9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+/* line 13, src/scss/components/_form.scss */
+.buttons li a {
+  display: block;
+}
+
+/* line 18, src/scss/components/_form.scss */
+.buttons li.active a, .buttons li:hover a {
+  color: #45acdc;
+  font-weight: bold;
+}
+
+/* line 26, src/scss/components/_form.scss */
+.cardProduct {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 29, src/scss/components/_form.scss */
+.cardProduct li {
+  width: 217px;
+  min-height: 181px;
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #C9C9C9;
+  position: relative;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+/* line 41, src/scss/components/_form.scss */
+.cardProduct__id, .cardProduct__logo, .cardProduct__type {
+  display: block;
+}
+
+/* line 45, src/scss/components/_form.scss */
+.cardProduct__type {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* line 50, src/scss/components/_form.scss */
+.cardProduct__id {
+  font-size: 10px;
+  margin: 10px 0 20px 0;
+}
+
+/* line 55, src/scss/components/_form.scss */
+.cardProduct__sale {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* line 60, src/scss/components/_form.scss */
+.cardProduct__bar {
+  margin-top: 15px;
+}
+
+/* line 64, src/scss/components/_form.scss */
+.cardProduct__progress {
+  background: #A1A1A1;
+}
+
+/* line 71, src/scss/components/_form.scss */
+.cardProduct__logo.ca:before {
+  content: "\e900";
+}
+
+/* line 77, src/scss/components/_form.scss */
+.cardProduct__logo.cc[data-card="4"]:before {
+  content: "\e900";
+}
+
+/* line 82, src/scss/components/_form.scss */
+.cardProduct__logo.cc[data-card="5"]:before {
+  content: "\e903";
+}
+
+/* line 89, src/scss/components/_form.scss */
+.cardProduct__logo.cdt:before {
+  content: "\e901";
+}
+
+/* line 94, src/scss/components/_form.scss */
+.cardProduct__logo.da:before {
+  content: "\e902";
+  margin-bottom: 5px;
+}
+
+/* line 100, src/scss/components/_form.scss */
+.cardProduct__logo.oc:before {
+  content: "\e901";
+}
+
+/* line 104, src/scss/components/_form.scss */
+.cardProduct__logo:before {
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1;
+  font-family: "icons";
+  color: #000000;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* line 109, src/scss/components/_form.scss */
+.show__details {
+  position: absolute;
+  color: #45acdc;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+}
+
+/* line 116, src/scss/components/_form.scss */
+.show__details:hover {
+  text-decoration: underline;
+}
+
+/* line 121, src/scss/components/_form.scss */
+.details {
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  border: 2px solid #C9C9C9;
+  border-radius: 10px;
+  z-index: 10;
+  padding: 20px;
+}
+
+/* line 134, src/scss/components/_form.scss */
+.details span {
+  display: block;
+  margin: 5px;
+}
+
+/* line 139, src/scss/components/_form.scss */
+.details.hide {
+  display: none;
+}
+
+/* line 144, src/scss/components/_form.scss */
+.details .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 18px;
+  height: 18px;
+  display: block;
+  border: 1px solid #C9C9C9;
+  border-radius: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  background: #D7D7D7;
+}
+
+/* line 158, src/scss/components/_form.scss */
+.details .cardProduct__logo {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=maps/style.css.map */

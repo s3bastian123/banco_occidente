@@ -1,0 +1,43 @@
+
+// ================================
+//        Typography settings
+//=================================
+
+@mixin font-family($font-family,$line-height,$font-size, $color){
+  font-weight: normal;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $font-family;
+  color: $color;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+//Mixin nuevos para maquillajes de especiales modulares
+//Funciona para la carga de imagenes o background de color define la ruta de la imagen, el alto que tenga requiera la imagen y un fondo plano
+$path--rel: "../images";
+$src:"../fonts";
+@mixin fontFace($family,$ruta,$weight: normal,$style: normal) {
+  @font-face {
+  font-family: $family;
+  src: url('#{$src}/#{$ruta}.eot'); // IE9 compat
+  src: url('#{$src}/#{$ruta}.eot?#iefix') format('embedded-opentype'), // IE8 and below
+  url('#{$src}/#{$ruta}.woff') format('woff'), // standards
+  url('#{$src}/#{$ruta}.ttf') format('truetype'); // Safari, Android, iOS
+  //url('#{$src}/#{$ruta}.svg##{$family}') format('svg'); // legacy iOS
+  font-style: $style;
+  font-weight: $weight;
+  }
+}
+//ocultar titulares, descripcion
+@mixin hide-text{
+  overflow:hidden;
+  text-indent:-9000px;
+  display:block;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,162 @@
+.buttons {
+    text-align: center;
+    li{
+        width: 90px;
+        display: inline-block;
+        font-size: 16px;
+        padding: 5px 10px;
+        border: 1px solid $gray2;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin: 10px;
+
+        a{
+            display: block;
+        }
+        
+        &.active, &:hover{
+            a{
+            color: $blue;
+            font-weight: bold;
+            }
+            
+        }
+    }
+}
+.cardProduct{
+    width: 1000px;
+    margin: 0 auto;
+    li{
+      width: 217px;
+      min-height: 181px;
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 1px solid $gray2;
+      position: relative;
+      vertical-align: top;
+      border-radius: 5px;
+    }
+    &__id, &__logo, &__type{
+        display: block;
+    }
+
+    &__type{
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    &__id{
+        font-size: 10px;
+        margin: 10px 0 20px 0;
+    }
+
+    &__sale{
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    &__bar{
+        margin-top: 15px;
+    }
+
+    &__progress{
+        background: $gray1;
+    }
+}
+.cardProduct__logo{
+
+    &.ca{
+        &:before{
+            content: "\e900";
+        }
+    }
+    &.cc{
+        &[data-card="4"]{
+            &:before{
+                content: "\e900";
+            }
+        }
+        &[data-card="5"]{
+            &:before{
+                content: "\e903";
+            }
+        }
+       
+    }
+    &.cdt{
+        &:before{
+            content: "\e901";
+        }
+    }
+    &.da{
+        &:before{
+            content: "\e902";
+            margin-bottom: 5px;
+        }
+    }
+    &.oc{
+        &:before{
+            content: "\e901";
+        }
+    }
+    &:before{
+        @include font-family($icons,1,26px, $black);
+    }
+}
+
+.show__details{
+    position: absolute;
+    color: $blue;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.details{
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $white;
+    border: 2px solid $gray2;
+    border-radius: 10px;
+    z-index: 10;
+    padding: 20px;
+    
+    span{
+        display: block;
+        margin: 5px;
+    }
+
+    &.hide{
+        display: none;
+    }
+    
+
+    .close{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 18px;
+        height: 18px;
+        display: block;
+        border: 1px solid $gray2;
+        border-radius: 50%;
+        box-sizing: border-box;
+        text-align: center;
+        background: $gray3;
+    }
+
+    .cardProduct__logo{
+        display: inline-block;
+        margin-right: 10px;
+    }
+}
